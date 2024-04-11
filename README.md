@@ -35,8 +35,6 @@ After initializing Prisma, you'll receive a pooling URL from Prisma Accelerate. 
 
 ```
 DATABASE_URL="prisma://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiNDU2NDU0ZDMtM2RjNC00OTcyLTk3MGUtODIzNTIwZmQ0N2IzIiwidGVuYW50X2lkIjoiOWNjYzA4YjI4MzdjZTY1YzBiNWY2MTg4ZjFjNzg4ODk0ZTdkMjczNDQ4ZWY0MzY4MzNhN2I3ZTMwYzhhYWFhYyIsImludGVybmFsX3NlY3JldCI6IjJmYWI0MWUyLTFiNzItNDQ4Zi04ZGZkLTQyMTllMDI2MTFkYSJ9.-iQpHZ4QzQQtII4yyumHO4ojF6HWs0M1qQWR_Sx_CDU"
-
-
 ```
 
 ### 2. Set Up Environment Variables
