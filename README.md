@@ -60,3 +60,20 @@ Replace `<Prisma_Accelerated_PoolingURL>` with the pooling URL you obtained from
 ```
 npx prisma migrate dev --name init_schema
 ```
+
+### 5. Generate the prisma client
+Client generation is for get the classes for what we written in `schema.prisma` file. Therse class are stored inside node modules and used for database operations
+
+```
+npx prisma generate --no-engine
+``` 
+### 6. Add the accelerate extension
+npm install @prisma/extension-accelerate
+
+### 7. Initialize the prisma client
+import { PrismaClient } from '@prisma/client/edge'
+import { withAccelerate } from '@prisma/extension-accelerate'
+
+const prisma = new PrismaClient({
+    datasourceUrl: env.DATABASE_URL,
+}).$extends(withAccelerate())
