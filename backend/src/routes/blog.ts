@@ -1,4 +1,4 @@
-// import { createBlogInput, updateBlogInput } from "@100xdevs/medium-common";
+import { createBlogInput, updateBlogInput } from "@100xdevs/medium-common";
 import { PrismaClient } from "@prisma/client/edge";
 import { withAccelerate } from "@prisma/extension-accelerate";
 import { Hono } from "hono";
@@ -147,4 +147,4 @@ blogRouter.get('/:id', async (c) => {
             message: "Error while fetching blog post"
         });
     }
-})
+})      
