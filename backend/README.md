@@ -71,9 +71,16 @@ npx prisma generate --no-engine
 npm install @prisma/extension-accelerate
 
 ### 7. Initialize the prisma client
+```
 import { PrismaClient } from '@prisma/client/edge'
 import { withAccelerate } from '@prisma/extension-accelerate'
 
 const prisma = new PrismaClient({
     datasourceUrl: env.DATABASE_URL,
 }).$extends(withAccelerate())
+```
+
+### 8. Create Routes & add Bindings for wrangler.toml 
+```
+added other env variables into the wrangler.toml file and also added inside Binding to access within index.ts or any other user, blog routes
+```
